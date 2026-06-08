@@ -35,9 +35,13 @@ while True:
           
 
     elif choice == "4":
-        num1= float(input("print your first number:"))
-        num2= float(input("print your second number:"))
-        
+        num1= float(input("Enter your first number: "))
+        num2= float(input("Enter your second number: "))
         print("Result:", divide(num1, num2))
     elif choice == "5":
         break
+        
+    elif choice == "3":
+        num1= float(input("Enter your 1st number: "))
+        num2= float(input("Enter your 2nd number: "))
+        print("Result:", multiply(num1, num2))
