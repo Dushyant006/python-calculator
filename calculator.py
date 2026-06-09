@@ -1,5 +1,5 @@
-def add(a, b):
-    return a + b
+def add(*args):
+    return sum(args)
 
 def subtract(a, b):
     return a - b
@@ -24,6 +24,18 @@ while True:
 
     if choice == "5":
         break
+
+    elif choice == "1":
+        try:
+            user_input = [float(x) for x in input("Enter numbers with spaces: ").split()]
+
+        except ValueError:
+            print("Enter number only")
+            break
+        
+        print("Result:", sum(user_input))
+        break
+
     elif choice == "4":
         num1= float(input("Enter your first number: "))
         num2= float(input("Enter your second number: "))
