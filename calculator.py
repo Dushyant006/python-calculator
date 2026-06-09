@@ -35,11 +35,24 @@ while True:
         
         print("Result:", sum(user_input))
         break
+    if choice == "2":
+        input_numbers = input("Enter numbers separated by spaces: ")
+        numbers = input_numbers.split()
+        if len(numbers) >= 2:
+            result = float(numbers[0])
+            for num in numbers[1:]:
+                result -= float(num)
+            print("Result:", result)
+        else:
+            print("Please enter at least two numbers for subtraction.")
+          
 
     elif choice == "4":
         num1= float(input("Enter your first number: "))
         num2= float(input("Enter your second number: "))
         print("Result:", divide(num1, num2))
+    elif choice == "5":
+        break
         
     elif choice == "3":
         num1= float(input("Enter your 1st number: "))
