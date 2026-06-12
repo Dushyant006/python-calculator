@@ -15,6 +15,11 @@ def divide(a, b):
 def power(base, exponent):
     return base**exponent
 
+def modulo(a, b):
+    if b == 0:
+        return "Cannot modulo by zero"
+    return a % b
+
 while True:
     print("\nCalculator")
     print("1. Add")
@@ -22,7 +27,8 @@ while True:
     print("3. Multiply")
     print("4. Divide")
     print("5. Power")
-    print("6. Exit")
+    print("6. Modulo")
+    print("7. Exit")
 
     choice = input("Choose: ")
 
@@ -67,6 +73,10 @@ while True:
 
         print("Result:", power(base, exponent))
     
-    
     elif choice == "6":
+        num1 = float(input("Enter your first number: "))
+        num2 = float(input("Enter your second number: "))
+        print("Result:", modulo(num1, num2))
+    
+    elif choice == "7":
         break
