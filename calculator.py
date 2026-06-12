@@ -20,6 +20,8 @@ def modulo(a, b):
         return "Cannot modulo by zero"
     return a % b
 
+
+
 while True:
     print("\nCalculator")
     print("1. Add")
@@ -28,7 +30,8 @@ while True:
     print("4. Divide")
     print("5. Power")
     print("6. Modulo")
-    print("7. Exit")
+    print("7. Floor Division")
+    print("8. Exit")
 
     choice = input("Choose: ")
 
@@ -77,6 +80,11 @@ while True:
         num1 = float(input("Enter your first number: "))
         num2 = float(input("Enter your second number: "))
         print("Result:", modulo(num1, num2))
-    
+
     elif choice == "7":
+        num1 = float(input("Enter your first number: "))
+        num2 = float(input("Enter your second number: "))
+        print("Result: ", int(num1/num2))
+    
+    elif choice == "8":
         break
